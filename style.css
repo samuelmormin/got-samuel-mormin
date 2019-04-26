@@ -74,8 +74,13 @@ body {
     background: url('images/home_hero_background.jpg');
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     box-sizing: border-box;
+    transition: all 1s ease-in-out;
+}
+.hero:hover {
+    transition: all 1s ease-in-out;
+    background-size: 110% 110%;
 }
 .heroContent__wrapper {
     display: inline-block;
@@ -118,14 +123,14 @@ body {
 }
 .home-seasons__titleWrapper {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: calc( 100% / 3 );
-    height: 200px;
-    background: #31A6D0;
+    height: auto;
+    background: #d9e7ec;
 }
 .home-seasons-title {
     position: relative;
-    color: #fefefe;
+    color: #31A6D0;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
@@ -137,7 +142,7 @@ body {
 }
 .home-seasons-title:before {
     content: '';
-    background: #fefefe;
+    background: #31A6D0;
     position: absolute;
     width: 40px;
     height: 4px;
@@ -314,4 +319,164 @@ body {
     height: 200px;
     margin: 60px 0;
     background: #f4f4f4;
+    text-align: center;
+}
+.home-partners__title {
+    position: relative;
+    color: #31A6D0;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0;
+}
+.home-partners__title:after {
+    content: '';
+    background: #31A6D0;
+    display: block;
+    width: 40px;
+    height: 4px;
+    bottom: 10px;
+    margin: 0 auto 0 auto;
+    transform: translate(0,100%);
+}
+.partner-logo {
+    margin: 0 20px;
+}
+.nextepisode__contentWrapper {
+    display: block;
+    background: #31A6D0;
+    text-align: left;
+}
+.nextepisode__title {
+    position: relative;
+    display: inline-block;
+    color: #FEFEFE;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    margin: 20px 20px;
+    padding: 0 0 0 50px;
+}
+.nextepisode__title:before {
+    content: url(images/event.png);
+    position: absolute;
+    left: 0;
+}
+.nextepisode__description {
+    position: relative;
+    display: inline-block;
+    color: #FEFEFE;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+    padding: 20px 20px;
+    margin: 0;
+}
+
+/* Latest */
+.latest {
+    font-size: 0;
+}
+.latest__contentWrapper {
+    width: calc( ( 100% / 2 ) - 10px );
+    height: 250px;
+    display: inline-block;
+    background: #31A6D0;
+    position: relative;
+    background: url('images/affiche-saison-8.jpg');
+    background-size: 100% auto;
+    margin: 20px 10px 0 0;
+    padding-top: 100px;
+    vertical-align: top;
+}
+.latest__contentWrapper:last-child {
+    margin: 20px 0 0 10px;
+}
+.latest__contentWrapper:hover {
+    background-size: 110% auto;
+    transition: .3s ease-in-out;
+}
+.latest__title {
+    color: #FEFEFE;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    padding: 20px 20px 10px 20px;
+    margin: 0;
+}
+.latest__description {
+    color: #FEFEFE;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    padding: 0 20px 10px 20px;
+    margin: 0;
+}
+.latest__content {
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    padding: 40px 0 0 0;
+    background: linear-gradient(to top, rgb(28, 128, 164, 1),rgb(28, 128, 164,0));
+}
+.latest__link {
+    width: 100%;
+    height: 100%;
+}
+
+/* SAISONS */
+.clear {
+    clear: both;
+}
+.saison-title {
+    position: relative;
+    color: #31A6D0;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    padding: 20px 0px;
+    margin: 0;
+}
+.saison-title:before {
+    content: '';
+    background: #31A6D0;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    bottom: 10px;
+}
+.saisonImage {
+    float: left;
+    width: 300px;
+    height: auto;
+    background: red;
+    margin: 0 20px 0 0;
+}
+.saison-paragraph {
+    color: #010101;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
 }
